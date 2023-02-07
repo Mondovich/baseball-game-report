@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.ui.games.TeamInfoFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_team"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/team_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_team_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include android:id="@+id/player_1" layout="@layout/fragment_player_row" />
+        <include android:id="@+id/player_2" layout="@layout/fragment_player_row" />
+        <include android:id="@+id/player_3" layout="@layout/fragment_player_row" />
+        <include android:id="@+id/player_4" layout="@layout/fragment_player_row" />
+        <include android:id="@+id/player_5" layout="@layout/fragment_player_row" />
+        <include android:id="@+id/player_6" layout="@layout/fragment_player_row" />
+        <include android:id="@+id/player_7" layout="@layout/fragment_player_row" />
+        <include android:id="@+id/player_8" layout="@layout/fragment_player_row" />
+        <include android:id="@+id/player_9" layout="@layout/fragment_player_row" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
